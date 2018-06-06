@@ -1,7 +1,7 @@
 # fusion-plugin-created
 
-You have created a Fusion.js universakl plugin.
+You have created a Fusion.js universal plugin.
 
 * Run linters: yarn lint
 * Run tests: yarn test
-* Build the plugin: yarn transpile
+* Build the plugin: yarn prepare
