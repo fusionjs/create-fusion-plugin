@@ -3,12 +3,15 @@
   "version": "0.0.4",
   "main": "index.js",
   "license": "MIT",
-  "files": ["templates", "bin"],
+  "files": [
+    "templates",
+    "bin"
+  ],
   "bin": {
     "create-fusion-plugin": "bin/cli.js"
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "fusion-scaffolder": "https://github.com/kevingrandon/fusion-scaffolder"
+    "fusion-scaffolder": "^0.0.1"
   }
 }
