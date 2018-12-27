@@ -31,8 +31,10 @@
   },
   "scripts": {
     "clean": "rm -rf test-artifacts",
-    "lint": "eslint .",
-    "test": "yarn clean && jest"
+    "lint": "yarn preinstall && eslint .",
+    "test": "yarn clean && jest",
+    "flow": "yarn preinstall && flow check",
+    "preinstall": "yarn install --cwd ./templates/plugin/content"
   },
   "jest": {
     "cache": false,

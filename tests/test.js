@@ -10,6 +10,10 @@ function log(execOutput) {
 }
 
 test('scaffolded plugin tests pass', async () => {
+  // Remove node_modules and build artifacts if they exist
+  await exec('rm -rf ./templates/plugin/content/node_modules');
+  await exec('rm -rf ./templates/plugin/content/dist');
+
   await exec(`mkdir test-artifacts`);
   log(
     await exec(`node ../bin/cli.js test-scaffold`, {cwd: './test-artifacts'})

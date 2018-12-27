@@ -1,3 +1,4 @@
 flow-typed/*
 node_modules/
-templates/* 
+templates/**/node_modules/
+templates/**/dist/
