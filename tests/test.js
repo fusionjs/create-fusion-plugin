@@ -11,8 +11,8 @@ function log(execOutput) {
 
 test('scaffolded plugin tests pass', async () => {
   // Remove node_modules and build artifacts if they exist
-  await exec('rm -rf ./templates/plugin/content/node_modules');
-  await exec('rm -rf ./templates/plugin/content/dist');
+  await exec('rm -rf ./templates/plugin/content/node_modules || true');
+  await exec('rm -rf ./templates/plugin/content/dist || true');
 
   await exec(`mkdir test-artifacts`);
   log(
