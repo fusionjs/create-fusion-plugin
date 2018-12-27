@@ -33,7 +33,7 @@
     "clean": "rm -rf test-artifacts",
     "lint": "yarn install-templates && eslint .",
     "test": "yarn clean && jest",
-    "flow": "yarn install-templates && flow check",
+    "flow": "yarn install-templates && flow",
     "install-templates": "yarn install --cwd ./templates/plugin/content"
   },
   "jest": {
