@@ -31,10 +31,10 @@
   },
   "scripts": {
     "clean": "rm -rf test-artifacts",
-    "lint": "yarn install-templates && eslint .",
+    "lint": "eslint .",
     "test": "yarn clean && jest",
-    "flow": "yarn install-templates && flow",
-    "install-templates": "yarn install --cwd ./templates/plugin/content"
+    "flow": "flow",
+    "postinstall": "yarn install --cwd ./templates/plugin/content"
   },
   "jest": {
     "cache": false,
