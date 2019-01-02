@@ -34,7 +34,7 @@
     "lint": "eslint .",
     "test": "yarn clean && jest",
     "flow": "flow",
-    "postinstall": "yarn install --cwd ./templates/plugin/content"
+    "postinstall": "cd ./templates/plugin/content && yarn install"
   },
   "jest": {
     "cache": false,
